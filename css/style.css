@@ -8,7 +8,7 @@ body{
 a {
   color: #5C5C5C;
   font-weight: 300;
-  text-decoration: none;o
+  text-decoration: none;
 
 }
 
@@ -36,12 +36,12 @@ padding:16px;
 
 li a:hover{
   background-color:#E2EFF5;
-}
 
 }
 h1, h2, h3{
 font-weight:600;
 }
+
 h1{
   text-align:center;
 }
@@ -54,7 +54,7 @@ float:right;
 }
 .pics{
   width:100%;
-  
+
 }
 .button{
   background-color: #E2EFF5;
