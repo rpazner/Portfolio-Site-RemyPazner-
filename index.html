@@ -10,20 +10,20 @@
   </head>
   <body>
     <header>
-      <img src="images/logo.png" alt="logo" width="40" height="40">
-      <div>
+    <!--  <img src="images/logo.png" alt="logo" width="40" height="40"> -->
+      <div class="container">
         <nav>
-          <ul class="navbar">
-            <li class="navs"><a href="index.html">Work</a></li>
-            <li class="navs"><a href="about.html">About</a></li>
-            <li class="navs"><a href="#contact">Contact</a></li>
+          <ul class="navigation">
+            <li><a href="index.html">Work</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="#contact">Contact</a></li>
           </ul>
         </nav>
       </div>
     </header>
     <main>
-      <div>
-        <div>
+      <div id="hero">
+        <div class="container">
           <h1>
             Hi, I'm Remy
             <br><span>I'm a Denver based Designer</span>
@@ -33,73 +33,64 @@
             </p>
         </div>
       </div>
-      <div>
-        <div>
+      <div id="work">
+        <div class="container">
           <h2>My Work</h2>
           <!--Money Saver App-->
-            <div class="info">
-            <div>
-              <a href="moneysaver.html">
-              <picture>
-                <source srcset="images/moneysaver.png" media="(max-width:767px)">
-                <img src="images/moneysaver.png" width="800" alt="Money Saver Image">
-              </picture>
-              </a>
-            </div>
-              <div class="info">
+            <div class="row">
+              <div class="cover">
                 <a href="moneysaver.html">
-                  <h3>Money Saving App</h3>
+                  <picture>
+                    <source srcset="images/moneysaver.png" media="(max-width:767px)">
+                    <img src="images/moneysaver.png" width="800" alt="Money Saver Image">
+                  </picture>
                 </a>
-                <p>An app created to help people save money quickly and easily</p>
-                <p>Role: UX and UI Designer</p>
-                <a></a>
+              </div>
+              <div class="description">
+                  <h3>Money Saving App</h3>
+                  <p>An app created to help people save money quickly and easily</p>
+                  <p>Role: UX and UI Designer</p>
+                <a class="button" href="moneysaver.html">Check it Out</a>
             </div>
-
           </div>
           <!--End of Money Saver App-->
           <!--Fact Checker App-->
-          <div>
-            <div class="pics">
+          <div class="row">
+            <div class="cover">
               <picture>
                 <source srcset="images/factchecker.png" media="(max-width:767px)">
                 <img src="images/factchecker.png" width="800" alt="Fact Checker Image">
               </picture>
             </div>
-            <div class="info">
-              <a href="factchecker.html">
+            <div class="description">
               <h3>Fact Checker App</h3>
-              </a>
               <p>An app that provides users with the ability to fact check their daily news</p>
               <p>Role: UX and UI Designer</p>
-
+              <a class="button" href="factchecker.html">Check it Out</a>
             </div>
           </div>
           <!--End of Fact Checker App-->
           <!-- Recipe App-->
-          <div>
-            <div>
-
+          <div class="row">
+            <div class="cover">
                 <picture>
                 <source srcset="images/recipe.png" media="(max-width:767px)">
                 <img src="images/recipe.png" width="800" alt="Recipe Image">
                 </picture>
-
             </div>
-            <div>
-              <a href="">
+            <div class="description">
               <h3>Recipe App</h3>
-              </a>
               <p>An app that provides users with simple, easy recipes to get them started in the kitchen</p>
               <p>Role: UX and UI Designer</p>
-              <a></a>
+              <a class="button" href="">Check it Out</a>
             </div>
           </div>
           <!--End of Recipe App-->
         </div>
       </div>
     </main>
-      <footer id="contact">
-        <div>
+      <footer>
+        <div class="container">
           <h2>Get In Touch</h2>
             <p>If you're interested in my work, feel free to reach out! </p>
             <div>

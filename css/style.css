@@ -1,7 +1,65 @@
+/*
+Colors Used
+#5C5C5C - Grey
+5D98B0 - Dark Blue
+E2EFF5 - Light Blue
+*/
+
+header{
+  background-color: #E2EFF5;
+  padding:10px;
+  box-shadow:         0px 3px 5px 0px rgba(50, 50, 50, 0.56);
+  position:relative;
+
+}
+
+nav{
+  display:inline-block;
+  width:100%;
+
+}
+
+nav ul{
+  list-style-type:none;
+  padding:0;
+  text-align:center;
+
+}
+
+nav ul li{
+  display:inline-block;
+
+
+}
+
+nav ul li a{
+  padding: 0 15px;
+
+}
 
 body{
   font-family: 'Poppins', sans-serif;
-  padding:20px;
+  margin:10px;
+  box-sizing: border-box;
+}
+
+#hero{
+  background-color: #E2EFF5;
+  padding: 20px 0;
+  display: inline-block;
+  width: 100%;
+}
+
+
+
+.row {
+  margin: 25px 0;
+
+}
+
+#work .row {
+  padding-bottom: 25px;
+
 
 }
 
@@ -12,44 +70,36 @@ a {
 
 }
 
+
 a:hover{
   color: #5D98B0;
 
 }
-ul.navbar{
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #E2EFF5;
-}
 
-li.navs{
-  float:left;
-}
-
-li.navs a{
-display:block;
-text-align:left;
-padding:16px;
-}
-
-li a:hover{
-  background-color:#E2EFF5;
-
-}
 h1, h2, h3{
 font-weight:600;
+}
+
+
+
+.cover{
+  float:left;
+  width:70%;
+  margin:10px 0;
+}
+
+.description{
+  padding: 60px 0;
+  text-align:center;
+
 }
 
 h1{
   text-align:center;
 }
 
-.mystory{
-width:70%;
-float:right;
-
+h2{
+text-align:center;
 
 }
 .pics{
@@ -76,3 +126,5 @@ color:white;
   margin: 0;
   padding: 0;
 }
+
+/* Layout Styling */
