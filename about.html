@@ -1,13 +1,17 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
+    <link rel="stylesheet" type="text/css" href="css/normalize.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;600&display=swap" rel="stylesheet">
     <meta charset="utf-8">
     <title>About Remy Pazner</title>
   </head>
   <body>
     <header>
-      <img src="images/logo.png" alt="logo" width="40" height="40">
-      <div class="topnav">
+      <div class="container">
+        <!-- <img src="images/logo.png" alt="logo" width="40" height="40"> -->
         <nav>
           <ul>
             <li><a href="index.html">Work</a></li>
@@ -19,12 +23,8 @@
     </header>
     <main>
       <!--header -->
-      <div>
-        <div>
-          <div>
+      <div class="container">
             <h1>About Me</h1>
-          </div>
-        </div>
       </div>
       <!--body-->
       <div>
@@ -32,30 +32,30 @@
           <div>
             <picture>
               <source srcset="images/remy_dog.jpeg" media="(max-width:767px)">
-                <img src="images/remy_dog.jpeg" width="75pc" alt="Profile Pic">
+                <img src="images/remy_dog.jpeg" alt="Profile Pic">
             </picture>
-              <div id="resumeinfo">
-                <div id="mystory">
+              <div>
+                <div class="container">
                   <h2>My Story</h2>
                   <p>I recently graduated from Michigan State University with a degree in Creative Advertising. There, I gained experience in video editing, graphic and web design. I left with the knowledge that good design can make a great impact. Following graduation, I enrolled in a UX/UI Design Bootcamp, where I learned even more about the impact of good design.</p>
                   <p>Aside from that, I feel strongly about having a career that makes a positive impact on the world. Of course it would be a dream to solve the world’s climate crisis, ensure equal rights for all, end world hunger, protect our wildlife, and put an end to gender wage gaps all in one, but I am, indeed, just one person</p>
                   <p>Here’s a bit more about myself to get you better acquainted.
-                    <ul>
+                    <ul class="lists">
                       <li>I find comfort in putting Ikea furniture together.</li>
                       <li>I do the daily crossword</li>
                       <li>I taught myself how to play the Ukulele</li>
                       <li>I can ride a bike with my eyes closed</li>
                     </ul>
                   </p>
-                  <a href="files/Remy_Resume.pdf" download target="_blank">Resume</a>
+                  <a class="button" href="files/Remy_Resume.pdf" download target="_blank">Resume</a>
                 </div>
-                <div id="skills">
+                <div>
                   <h2>Skills and Tools</h2>
                 </div>
                 <div>
-                  <div id="skillsquare1">
+                  <div>
                     <h3>Relevant Skills</h3>
-                      <ul>
+                      <ul class="lists">
                         <li>Brand Identity</li>
                         <li>Graphic Design</li>
                         <li>User Interface Design</li>
@@ -63,9 +63,9 @@
                         <li>Wireframing/Prototyping</li>
                       </ul>
                   </div>
-                  <div id="skillsquare2">
+                  <div>
                     <h3> Tools I Use</h3>
-                      <ul>
+                      <ul class="lists">
                         <li>Microsoft Office</li>
                         <li>Photoshop</li>
                         <li>InDesign</li>
@@ -80,28 +80,29 @@
         </div>
       </div>
     </main>
-      <footer id="contact">
-        <div>
+      <footer>
+        <div class="container">
           <h2>Get In Touch</h2>
-            <p>If you're interested in my work, hit my line. <a href="tel:+12488600534">248.860.0534</a></p>
+            <p>If you're interested in my work, feel free to reach out! </p>
             <div>
-              <a href="mailto:remypazneratoutlook.com">Email Me</a>
+              <a class="button" href="tel:+12488600534">Call</a>
+              <a class="button" href="mailto:remypazneratoutlook.com">Email</a>
             </div>
             <br>
             <div>
               <ul>
               <a href="https://www.behance.net/remypazner">
-                <svg height="100%" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;" version="1.1" viewBox="0 0 512 512" width="100%" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:serif="http://www.serif.com/" xmlns:xlink="http://www.w3.org/1999/xlink"><g><path d="M143.349,356.877c6.823,0 13.319,-0.606 19.427,-1.975c6.204,-1.345 11.694,-3.503 16.348,-6.678c4.629,-3.054 8.483,-7.247 11.27,-12.555c2.8,-5.283 4.145,-12.143 4.145,-20.42c0,-16.227 -4.581,-27.764 -13.658,-34.756c-9.113,-6.908 -21.244,-10.337 -36.162,-10.337l-75.391,0l0,86.721l74.021,0Zm-3.841,-134.057c12.276,0 22.456,-2.909 30.515,-8.823c7.974,-5.829 11.827,-15.439 11.827,-28.648c0,-7.32 -1.272,-13.379 -3.853,-18.081c-2.679,-4.702 -6.229,-8.374 -10.689,-10.956c-4.435,-2.678 -9.453,-4.52 -15.257,-5.526c-5.721,-1.115 -11.695,-1.551 -17.839,-1.551l-64.884,0l0,73.585l70.18,0Zm8.968,-127.235c15.063,0 28.66,1.297 41.082,4c12.361,2.617 22.892,6.992 31.812,12.991c8.774,5.999 15.645,13.973 20.565,24.019c4.787,9.901 7.199,22.299 7.199,36.95c0,15.851 -3.588,29.097 -10.798,39.689c-7.247,10.567 -17.9,19.232 -32.115,25.97c19.354,5.575 33.727,15.379 43.24,29.328c9.562,14.045 14.251,30.842 14.251,50.547c0,15.972 -3.053,29.715 -9.173,41.288c-6.169,11.707 -14.567,21.196 -24.917,28.516c-10.434,7.38 -22.395,12.809 -35.822,16.336c-13.27,3.514 -27.049,5.296 -41.18,5.296l-152.623,0l0,-314.93l148.479,0Z" style="fill:#030404;fill-rule:nonzero;"/><path d="M434.514,236.017c-7.453,-8.229 -20.045,-12.688 -35.423,-12.688c-10.01,0 -18.287,1.684 -24.929,5.114c-6.495,3.393 -11.803,7.598 -15.863,12.567c-4.048,5.041 -6.786,10.374 -8.398,16.069c-1.6,5.551 -2.569,10.58 -2.848,15.028l101.894,0c-1.49,-15.973 -6.956,-27.789 -14.433,-36.09Zm-71.973,119.818c9.392,9.162 22.952,13.767 40.525,13.767c12.627,0 23.534,-3.187 32.696,-9.562c9.077,-6.362 14.603,-13.161 16.736,-20.214l55.164,0c-8.871,27.449 -22.31,47.045 -40.67,58.849c-18.142,11.84 -40.246,17.741 -66.023,17.741c-17.96,0 -34.126,-2.908 -48.644,-8.628c-14.507,-5.805 -26.625,-13.925 -36.829,-24.528c-9.938,-10.641 -17.657,-23.22 -23.159,-37.993c-5.441,-14.7 -8.18,-30.975 -8.18,-48.608c0,-17.051 2.848,-32.975 8.422,-47.699c5.672,-14.773 13.549,-27.522 23.886,-38.21c10.362,-10.75 22.638,-19.233 36.938,-25.438c14.312,-6.168 30.091,-9.27 47.566,-9.27c19.293,0 36.174,3.708 50.668,11.27c14.422,7.465 26.262,17.572 35.557,30.224c9.283,12.628 15.912,27.073 20.044,43.276c4.096,16.178 5.538,33.072 4.363,50.765l-164.548,0c0,18.033 6.084,35.096 15.488,44.258Z" style="fill:#030404;fill-rule:nonzero;"/><rect height="31.072" style="fill:#030404;" width="127.659" x="334.231" y="116.72"/></g>
+                <svg height="5%" width="5%"style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;" version="1.1" viewBox="0 0 512 512" width="100%" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:serif="http://www.serif.com/" xmlns:xlink="http://www.w3.org/1999/xlink"><g><path d="M143.349,356.877c6.823,0 13.319,-0.606 19.427,-1.975c6.204,-1.345 11.694,-3.503 16.348,-6.678c4.629,-3.054 8.483,-7.247 11.27,-12.555c2.8,-5.283 4.145,-12.143 4.145,-20.42c0,-16.227 -4.581,-27.764 -13.658,-34.756c-9.113,-6.908 -21.244,-10.337 -36.162,-10.337l-75.391,0l0,86.721l74.021,0Zm-3.841,-134.057c12.276,0 22.456,-2.909 30.515,-8.823c7.974,-5.829 11.827,-15.439 11.827,-28.648c0,-7.32 -1.272,-13.379 -3.853,-18.081c-2.679,-4.702 -6.229,-8.374 -10.689,-10.956c-4.435,-2.678 -9.453,-4.52 -15.257,-5.526c-5.721,-1.115 -11.695,-1.551 -17.839,-1.551l-64.884,0l0,73.585l70.18,0Zm8.968,-127.235c15.063,0 28.66,1.297 41.082,4c12.361,2.617 22.892,6.992 31.812,12.991c8.774,5.999 15.645,13.973 20.565,24.019c4.787,9.901 7.199,22.299 7.199,36.95c0,15.851 -3.588,29.097 -10.798,39.689c-7.247,10.567 -17.9,19.232 -32.115,25.97c19.354,5.575 33.727,15.379 43.24,29.328c9.562,14.045 14.251,30.842 14.251,50.547c0,15.972 -3.053,29.715 -9.173,41.288c-6.169,11.707 -14.567,21.196 -24.917,28.516c-10.434,7.38 -22.395,12.809 -35.822,16.336c-13.27,3.514 -27.049,5.296 -41.18,5.296l-152.623,0l0,-314.93l148.479,0Z" style="fill:#030404;fill-rule:nonzero;"/><path d="M434.514,236.017c-7.453,-8.229 -20.045,-12.688 -35.423,-12.688c-10.01,0 -18.287,1.684 -24.929,5.114c-6.495,3.393 -11.803,7.598 -15.863,12.567c-4.048,5.041 -6.786,10.374 -8.398,16.069c-1.6,5.551 -2.569,10.58 -2.848,15.028l101.894,0c-1.49,-15.973 -6.956,-27.789 -14.433,-36.09Zm-71.973,119.818c9.392,9.162 22.952,13.767 40.525,13.767c12.627,0 23.534,-3.187 32.696,-9.562c9.077,-6.362 14.603,-13.161 16.736,-20.214l55.164,0c-8.871,27.449 -22.31,47.045 -40.67,58.849c-18.142,11.84 -40.246,17.741 -66.023,17.741c-17.96,0 -34.126,-2.908 -48.644,-8.628c-14.507,-5.805 -26.625,-13.925 -36.829,-24.528c-9.938,-10.641 -17.657,-23.22 -23.159,-37.993c-5.441,-14.7 -8.18,-30.975 -8.18,-48.608c0,-17.051 2.848,-32.975 8.422,-47.699c5.672,-14.773 13.549,-27.522 23.886,-38.21c10.362,-10.75 22.638,-19.233 36.938,-25.438c14.312,-6.168 30.091,-9.27 47.566,-9.27c19.293,0 36.174,3.708 50.668,11.27c14.422,7.465 26.262,17.572 35.557,30.224c9.283,12.628 15.912,27.073 20.044,43.276c4.096,16.178 5.538,33.072 4.363,50.765l-164.548,0c0,18.033 6.084,35.096 15.488,44.258Z" style="fill:#030404;fill-rule:nonzero;"/><rect height="31.072" style="fill:#030404;" width="127.659" x="334.231" y="116.72"/></g>
                 </svg>
               </a>
               <a href="https://www.instagram.com/rpazner/" target="_blank">
-                <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Instagram icon</title>
+                <svg height="5%" width="5%"role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Instagram icon</title>
                 <path d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678c-3.405 0-6.162 2.76-6.162 6.162 0 3.405 2.76 6.162 6.162 6.162 3.405 0 6.162-2.76 6.162-6.162 0-3.405-2.76-6.162-6.162-6.162zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405c0 .795-.646 1.44-1.44 1.44-.795 0-1.44-.646-1.44-1.44 0-.794.646-1.439 1.44-1.439.793-.001 1.44.645 1.44 1.439z"
                 />
                 </svg>
               </a>
               <a href="https://www.linkedin.com/in/remy-pazner/" target="_blank">
-                <svg height="100%" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;" version="1.1" viewBox="0 0 512 512" width="100%" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:serif="http://www.serif.com/" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M449.446,0c34.525,0 62.554,28.03 62.554,62.554l0,386.892c0,34.524 -28.03,62.554 -62.554,62.554l-106.468,0l0,-192.915l66.6,0l12.672,-82.621l-79.272,0l0,-53.617c0,-22.603 11.073,-44.636 46.58,-44.636l36.042,0l0,-70.34c0,0 -32.71,-5.582 -63.982,-5.582c-65.288,0 -107.96,39.569 -107.96,111.204l0,62.971l-72.573,0l0,82.621l72.573,0l0,192.915l-191.104,0c-34.524,0 -62.554,-28.03 -62.554,-62.554l0,-386.892c0,-34.524 28.029,-62.554 62.554,-62.554l386.892,0Z"/></svg>
+                <svg height="5%" width="5%" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;" version="1.1" viewBox="0 0 512 512" width="100%" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:serif="http://www.serif.com/" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M449.446,0c34.525,0 62.554,28.03 62.554,62.554l0,386.892c0,34.524 -28.03,62.554 -62.554,62.554l-106.468,0l0,-192.915l66.6,0l12.672,-82.621l-79.272,0l0,-53.617c0,-22.603 11.073,-44.636 46.58,-44.636l36.042,0l0,-70.34c0,0 -32.71,-5.582 -63.982,-5.582c-65.288,0 -107.96,39.569 -107.96,111.204l0,62.971l-72.573,0l0,82.621l72.573,0l0,192.915l-191.104,0c-34.524,0 -62.554,-28.03 -62.554,-62.554l0,-386.892c0,-34.524 28.029,-62.554 62.554,-62.554l386.892,0Z"/></svg>
               </a>
               </ul>
             </div>
